@@ -38,7 +38,7 @@ namespace _07_ClassesNew
     }
     public class Person
     {
-        public int _field;
+
         //age
         //height
         //gender
@@ -46,22 +46,42 @@ namespace _07_ClassesNew
         //DateOfBirth
         //firstName
         //LastName
-
-       
-
         public string FirstName { get; set; }
+        public string LastName { get; set; }
 
-
-        private string _firstName;
-
-        public string GetFirstName()
+        public string FullName
         {
-            return _firstName;
+            get { return $"{FirstName} {LastName}"; }
         }
-        public void SetFirstName(string value)
+
+        public DateTime DateOfBirth { get; set; }
+
+        public int AgeInYears
         {
-            _firstName = value;
+            get
+            {
+                TimeSpan ageSpan = DateTime.Now - DateOfBirth;
+                double totalAgeInYears = ageSpan.TotalDays / 365.25;
+                return Convert.ToInt32(Math.Floor(totalAgeInYears));
+            }
         }
+
+        public Vehicle Transport { get; set; }
+
+        public Person()
+        {
+
+        }
+
+        public Person(string firstName, string lastName, DateTime dateOfBirth, Vehicle transport)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            DateOfBirth = dateOfBirth;
+            Transport = transport;
+        }
+
+
 
     }
 }
