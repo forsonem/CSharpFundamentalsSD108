@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _07_ClassesNew
+namespace _07_Classes
 {
     public enum VehicleType { Car, Truck, SUV, Minivan, Coupe, Boat }
     public class Vehicle
@@ -13,7 +13,7 @@ namespace _07_ClassesNew
         public string Make { get; set; }
         public int Year { get; set; }
         public string Model { get; set; }
-        public string  Color { get; set; }
+        public string Color { get; set; }
         public double Mileage { get; set; }
 
         public VehicleType Type { get; set; }

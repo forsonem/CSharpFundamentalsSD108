@@ -1,6 +1,4 @@
-﻿
-using _07_ClassesNew;
-using AccessModifiers;
+﻿using _07_Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,28 +28,12 @@ namespace _07_ClassesConsole
             Console.ReadLine();
 
 
-            Person firstPerson = new Person("Garry", "Banks", new DateTime(1991,08,24), firstVehicle);
+            Person firstPerson = new Person("Garry", "Banks", new DateTime(1991, 08, 24), firstVehicle);
 
             Console.WriteLine(firstPerson.FullName);
             Console.WriteLine(firstPerson.AgeInYears);
 
             Console.ReadKey();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            Access secondAccess = new Access();
 
 
         }

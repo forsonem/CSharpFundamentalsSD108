@@ -42,8 +42,8 @@ namespace _06_Methods
         //1) Access Modifier 
         //2) Return Type
         //3) Method Signature
-            //Name
-            //Parameters
+        //Name
+        //Parameters
         //4) Body - the actual code
         [TestMethod]
         public void SayHello(string name)
@@ -52,7 +52,7 @@ namespace _06_Methods
         }
 
         [TestMethod]
-        public int AddTwoNumbers(int numOne,int numTwo)
+        public int AddTwoNumbers(int numOne, int numTwo)
         {
             int sum = numOne + numTwo;
             return sum;
