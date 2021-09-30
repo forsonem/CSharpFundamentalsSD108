@@ -1,6 +1,7 @@
 ﻿using _07_Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace _07_ClassesTests
 {
