@@ -1,4 +1,5 @@
 ﻿
+
 using _07_ClassesNew;
 using AccessModifiers;
 using System;
@@ -13,31 +14,34 @@ namespace _07_ClassesConsole
     {
         static void Main(string[] args)
         {
-            Vehicle firstVehicle = new Vehicle();
+            PersonRepository repo = new PersonRepository(); //Instance of the Person Repository class. I am creating a Person Repository Object.
 
-            firstVehicle.Make = "Honda";
-            firstVehicle.Model = "civic";
-            firstVehicle.Year = 2012;
-            firstVehicle.Type = VehicleType.Car;
-            firstVehicle.Mileage = 150000;
-            firstVehicle.Color = "gray";
+            
 
+            Person person1 = new Person();
+            Person person2 = new Person();
+            Person person3 = new Person();
 
-            Vehicle secondVehicle = new Vehicle("Chevy", "Silverado", 1994, 980000, "black", VehicleType.Truck);
-
-            Console.WriteLine(secondVehicle.Make);
-
-            Console.ReadLine();
+            repo.AddPerson(person2);
+            repo.AddPerson(person3);
 
 
-            Person firstPerson = new Person("Garry", "Banks", new DateTime(1991,08,24), firstVehicle);
+            
 
-            Console.WriteLine(firstPerson.FullName);
-            Console.WriteLine(firstPerson.AgeInYears);
+
+            person1.FirstName = "Mason";
+            person2.FirstName = "Anna";
+
+
+
+
+             Person updatedPerson = repo.UpdatePerson(person1,person2);
+            Console.WriteLine(updatedPerson.FirstName);
 
             Console.ReadKey();
 
 
+            
 
 
 
@@ -51,7 +55,10 @@ namespace _07_ClassesConsole
 
 
 
-            Access secondAccess = new Access();
+
+
+          
+            
 
 
         }

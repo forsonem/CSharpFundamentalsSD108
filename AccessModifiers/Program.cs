@@ -7,24 +7,29 @@ using System.Threading.Tasks;
 
 namespace AccessModifiers
 {
-    public class Access
+    static class Access
     {
-        public string _age;
+        public static void someMethod()
+        {
+
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Access accessOne = new Access();
-            accessOne._age = "34";
+            Access.someMethod();
 
-            int.Parse(accessOne._age);
 
-            Person person = new Person();
+            
+
+            
 
         }
         
     }
+    
+
     
 
 }

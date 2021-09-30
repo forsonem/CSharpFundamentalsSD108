@@ -81,6 +81,11 @@ namespace _07_ClassesNew
             Transport = transport;
         }
 
+        public string GetName()
+        {
+            return "erck";
+        }
+
 
 
     }
