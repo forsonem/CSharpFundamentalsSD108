@@ -1,7 +1,4 @@
-﻿
-
-using _07_ClassesNew;
-using AccessModifiers;
+﻿using _07_Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,51 +11,29 @@ namespace _07_ClassesConsole
     {
         static void Main(string[] args)
         {
-            PersonRepository repo = new PersonRepository(); //Instance of the Person Repository class. I am creating a Person Repository Object.
+            Vehicle firstVehicle = new Vehicle();
 
-            
-
-            Person person1 = new Person();
-            Person person2 = new Person();
-            Person person3 = new Person();
-
-            repo.AddPerson(person2);
-            repo.AddPerson(person3);
+            firstVehicle.Make = "Honda";
+            firstVehicle.Model = "civic";
+            firstVehicle.Year = 2012;
+            firstVehicle.Type = VehicleType.Car;
+            firstVehicle.Mileage = 150000;
+            firstVehicle.Color = "gray";
 
 
-            
+            Vehicle secondVehicle = new Vehicle("Chevy", "Silverado", 1994, 980000, "black", VehicleType.Truck);
+
+            Console.WriteLine(secondVehicle.Make);
+
+            Console.ReadLine();
 
 
-            person1.FirstName = "Mason";
-            person2.FirstName = "Anna";
+            Person firstPerson = new Person("Garry", "Banks", new DateTime(1991, 08, 24), firstVehicle);
 
-
-
-
-             Person updatedPerson = repo.UpdatePerson(person1,person2);
-            Console.WriteLine(updatedPerson.FirstName);
+            Console.WriteLine(firstPerson.FullName);
+            Console.WriteLine(firstPerson.AgeInYears);
 
             Console.ReadKey();
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-            
 
 
         }

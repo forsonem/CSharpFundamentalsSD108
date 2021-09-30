@@ -1,10 +1,8 @@
-﻿
-using _07_ClassesNew;
+﻿using _07_Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
 
-namespace _06_Methods
+namespace _07_ClassesTests
 {
     [TestClass]
     public class PersonMethodsTest
@@ -42,6 +40,6 @@ namespace _06_Methods
 
         }
 
-        
+
     }
 }
