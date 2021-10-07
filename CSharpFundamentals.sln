@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Operators", "03_Operator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ClassesTests", "07_ClassesTests\07_ClassesTests.csproj", "{21A81AF1-4DDF-48DB-8F48-0EDC7F7AABF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepositoryPattern_Console", "08_RepositoryPattern_Console\08_RepositoryPattern_Console.csproj", "{AAB73527-4C69-461D-9366-8191ED45CD70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepositoryPattern_Repository", "08_RepositoryPattern_Repository\08_RepositoryPattern_Repository.csproj", "{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{21A81AF1-4DDF-48DB-8F48-0EDC7F7AABF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A81AF1-4DDF-48DB-8F48-0EDC7F7AABF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A81AF1-4DDF-48DB-8F48-0EDC7F7AABF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB73527-4C69-461D-9366-8191ED45CD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB73527-4C69-461D-9366-8191ED45CD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB73527-4C69-461D-9366-8191ED45CD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB73527-4C69-461D-9366-8191ED45CD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
