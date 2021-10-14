@@ -11,29 +11,81 @@ namespace _07_ClassesConsole
     {
         static void Main(string[] args)
         {
-            Vehicle firstVehicle = new Vehicle();
-
-            firstVehicle.Make = "Honda";
-            firstVehicle.Model = "civic";
-            firstVehicle.Year = 2012;
-            firstVehicle.Type = VehicleType.Car;
-            firstVehicle.Mileage = 150000;
-            firstVehicle.Color = "gray";
 
 
-            Vehicle secondVehicle = new Vehicle("Chevy", "Silverado", 1994, 980000, "black", VehicleType.Truck);
 
-            Console.WriteLine(secondVehicle.Make);
+            PersonRepository personRepo = new PersonRepository();
 
-            Console.ReadLine();
+            Person person1 = new Person();
+
+            person1.FirstName = "Erick";
+
+            bool result = personRepo.AddPerson2(person1);
+
+         
+            
 
 
-            Person firstPerson = new Person("Garry", "Banks", new DateTime(1991, 08, 24), firstVehicle);
 
-            Console.WriteLine(firstPerson.FullName);
-            Console.WriteLine(firstPerson.AgeInYears);
+
+           bool result2 = personRepo.DeletePersonByFirstName("Erick");
+
+            Console.WriteLine(result2);
+
+
+
 
             Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //Vehicle firstVehicle = new Vehicle();
+
+            //firstVehicle.Make = "Honda";
+            //firstVehicle.Model = "civic";
+            //firstVehicle.Year = 2012;
+            //firstVehicle.Type = VehicleType.Car;
+            //firstVehicle.Mileage = 150000;
+            //firstVehicle.Color = "gray";
+
+
+            //Vehicle secondVehicle = new Vehicle("Chevy", "Silverado", 1994, 980000, "black", VehicleType.Truck);
+
+            //Console.WriteLine(secondVehicle.Make);
+
+            //Console.ReadLine();
+
+
+            //Person firstPerson = new Person("Garry", "Banks", new DateTime(1991, 08, 24), firstVehicle);
+
+            //Console.WriteLine(firstPerson.FullName);
+            //Console.WriteLine(firstPerson.AgeInYears);
+
+            //Console.ReadKey();
 
 
         }

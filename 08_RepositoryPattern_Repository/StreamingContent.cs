@@ -72,7 +72,7 @@ namespace _08_RepositoryPattern_Repository
         //default constructor - that you don't have give ANY value to create this object
         public StreamingContent()
         {
-
+            Console.WriteLine("Streaming Content constructor");
         }
         //overloaded constructor - you DO have to give some value to create this object
         public StreamingContent(string title, string description, double starRating, MaturityRating maturityRating, GenreType genreType)

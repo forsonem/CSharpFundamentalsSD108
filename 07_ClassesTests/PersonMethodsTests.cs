@@ -8,9 +8,19 @@ namespace _07_ClassesTests
     [TestClass]
     public class PersonMethodsTest
     {
+        private PersonRepository _personRepo;
+
+        [TestInitialize]
+        public void Arrange()
+        {
+            _personRepo = new PersonRepository();
+        }
+
+
         [TestMethod]
         public void Test_AddPerson()
         {
+           
 
             //AAA
 
@@ -39,6 +49,46 @@ namespace _07_ClassesTests
 
             Assert.IsTrue(result);
 
+        }
+
+        [TestMethod]
+        public void Test_AddPerson2()
+        {
+            //AAA
+
+            //Arrange
+
+            PersonRepository _repo = new PersonRepository();
+            Person personTest = new Person();
+
+            //Act
+
+             bool actual = _repo.AddPerson2(personTest);
+
+            //Assert
+
+            Assert.IsTrue(actual);
+
+        }
+
+        
+
+        [TestMethod]
+        public void Test_DeletePersonByFirstName()
+        {
+            //Arrange
+            Person person = new Person();
+            person.FirstName = "Nabil";
+            _personRepo.AddPerson2(person);
+
+
+            //Act
+            bool actual = _personRepo.DeletePersonByFirstName("Nabil");
+            bool expected = true;
+
+            //Assert
+
+            Assert.AreEqual(expected, actual);
         }
 
 
