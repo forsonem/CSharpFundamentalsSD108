@@ -27,6 +27,7 @@ namespace _08_RepositoryPattern_Repository
         Action,
         Comedy
     }
+   
     public class StreamingContent
     {
         //object that we will create a collection of

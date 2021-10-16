@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C9B9DFD-95B4-4978-897F-AFFA2193547C}</ProjectGuid>
+    <ProjectGuid>{4987CA00-8FA6-4A01-A1DC-3E1BA76BB829}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_09_InheritanceConsole</RootNamespace>
-    <AssemblyName>09_InheritanceConsole</AssemblyName>
+    <RootNamespace>_10_InterfacesConsole_Part1</RootNamespace>
+    <AssemblyName>10_InterfacesConsole_Part1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,25 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fruit Classes\Bannana.cs" />
+    <Compile Include="Fruit Classes\Grape.cs" />
+    <Compile Include="Fruit Classes\IFruit.cs" />
+    <Compile Include="Fruit Classes\Orange.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\08_RepositoryPattern_Repository\08_RepositoryPattern_Repository.csproj">
-      <Project>{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}</Project>
-      <Name>08_RepositoryPattern_Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\09_Inheritance_ClassLibrary\09_Inheritance_ClassLibrary.csproj">
-      <Project>{1D0A2475-F668-4F71-A6BE-69BE945E60D7}</Project>
-      <Name>09_Inheritance_ClassLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\09_StreamingContentInheritance\09_StreamingContentInheritance.csproj">
-      <Project>{961C17AC-776E-490F-A82B-34504E13A9DF}</Project>
-      <Name>09_StreamingContentInheritance</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
