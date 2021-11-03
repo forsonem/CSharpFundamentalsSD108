@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="PersonMethodsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -59,6 +60,10 @@
     <ProjectReference Include="..\07_Classes\07_Classes.csproj">
       <Project>{3E47BDAC-EFCF-412C-9539-564AF64865A9}</Project>
       <Name>07_Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\08_RepositoryPattern_Repository\08_RepositoryPattern_Repository.csproj">
+      <Project>{59F569A3-6C26-4BC9-93E8-112F1F77FC5B}</Project>
+      <Name>08_RepositoryPattern_Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
